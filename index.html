@@ -1,51 +1,129 @@
 <html>
-  <head>
-    <title>Student.Net Live Demo</title>
-    <style> 
-            .widget-example__example widget-example__example--full-width { 
-                text-align:center; 
-                position: relative; 
-                left: 100px; 
-                height: 200px; 
-                width: 500px; 
-                background-color: green;  
-            } 
-            .widget-example__example widget-example__example--full-width { 
-                position: absolute; 
-                bottom: 0px; 
-            } 
-            widget-example__example widget-example__example--full-width { 
-                margin-left:110px; 
-            } 
-        </style> 
-<style>
-body {
-  background-color: White;
-}
 
-h1 {
-  color: Black;
-  text-align: center;
-}
+<head>
+	<title>Student.Net Live Demo</title>
+	<style>
+		body {
+			background-color: White;
+		}
 
-</style>
+
+		h1 {
+			color: Black;
+			text-align: center;
+		}
+
+		body {
+			background-image: url('https://pikwizard.com/photos/1f6c723aae6161ce00d9274fdec478d7-m.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+		body {
+			font-family: 'Lato', sans-serif;
+		}
+
+		.overlay {
+			height: 0%;
+			width: 100%;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: rgb(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.9);
+			overflow-y: hidden;
+			transition: 0.5s;
+		}
+
+		.overlay-content {
+			position: relative;
+			top: 25%;
+			width: 100%;
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.overlay a {
+			padding: 8px;
+			text-decoration: none;
+			font-size: 36px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;
+		}
+
+		.overlay a:hover,
+		.overlay a:focus {
+			color: #f1f1f1;
+		}
+
+		.overlay .closebtn {
+			position: absolute;
+			top: 20px;
+			right: 45px;
+			font-size: 60px;
+		}
+
+		@media screen and (max-height: 450px) {
+			.overlay {
+				overflow-y: auto;
+			}
+
+			.overlay a {
+				font-size: 20px
+			}
+
+			.overlay .closebtn {
+				font-size: 40px;
+				top: 15px;
+				right: 35px;
+			}
+		}
+	</style>
 </head>
-<body>
-<marquee behavior="scroll" direction="left">Welcome To Student.Net Live Demo | Thanks For Useing The Student.Net Live Demo | Please Social Distance | Remote Learing Starts Aug 19 | Thanks For Useing The Unoffical Landing Page For NVUSD | Family Oriantation Starts Today | Last Page Update "Aug 18 10:36" | Have A Good Day</marquee>
 
-  <h1>Student.net Live Demo</h1>
-  
-  <! google search>
-    <style>
-    body {
-  color: Black;
-  text-align: center;
+<body>
+
+	<marquee behavior="scroll" direction="left">Welcome To Student.Net Live Demo | Thanks For Useing The Student.Net
+		Live Demo | Please Social Distance | Remote Learing Starts Aug 19 | Thanks For Useing The Unoffical Landing Page
+		For NVUSD | Family Oriantation Starts Today | Last Page Update "Aug 18 10:36" | Have A Good Day</marquee>
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="https://napavalleyusd.asp.aeries.net/Student/LoginParent.aspx">Aeries Student Portal</a>
+			<a href="https://clever.com/oauth/authorize?channel=clever&client_id=4c63c1cf623dce82caac&confirmed=true&redirect_uri=https%3A%2F%2Fclever.com%2Fin%2Fauth_callback&response_type=code&state=0cc5ce78f88c3e7f5cfddc378d396795672f6dabb8e7d789c1b06771a9ee9bd2&district_id=5ba2bcabf6cd4800018eb876">Clever</a>
+			<a href="https://acms-nvusd-ca.schoolloop.com/">ACMS Site</a>
+			<a href="https://www.nvusd.k12.ca.us/">NVUSD Site</a>
+		</div>
+	</div>
+
+
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+	<script>
+		function openNav() {
+  document.getElementById("myNav").style.height = "100%";
 }
-</style>
-    <form action="https://www.google.com/search" class="searchform" method="get" name="searchform"">
-<input text="sitesearch" type="hidden" value="">
-<input autocomplete="on" class="form-control search" name="q" placeholder="Search Engine Powered By Google Search"  type="text">
-<button class="button" type="submit">Search</button>
-</form>
-  <! google search>
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+	</script>
+	<h1>Student.net Live Demo</h1>
+
+	<! google search>
+		<style>
+			body {
+				color: Black;
+				text-align: center;
+			}
+		</style>
+		<form action="https://www.google.com/search" class="searchform" method="get" name="searchform"">
+<input text=" sitesearch" type="hidden" value="">
+			<input autocomplete="on" class="form-control search" name="q" placeholder="Search Engine Powered By Google Search"  type="text">
+			<button class="button" type="submit">Search</button>
+		</form>
+		<! google search>
 </body>
