@@ -137,8 +137,33 @@
 	<div class="navbar">
 		
     <a class="active" href="#">Home</a>
-		
-    <a href="javascript:void(0)">Apps</a><br>
+		<div id="myNav" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+						<a href="https://napavalleyusd.asp.aeries.net/Student/LoginParent.aspx">Aeries Student
+							Portal</a>
+						<a
+							href="https://clever.com/oauth/authorize?channel=clever&client_id=4c63c1cf623dce82caac&confirmed=true&redirect_uri=https%3A%2F%2Fclever.com%2Fin%2Fauth_callback&response_type=code&state=0cc5ce78f88c3e7f5cfddc378d396795672f6dabb8e7d789c1b06771a9ee9bd2&district_id=5ba2bcabf6cd4800018eb876">Clever</a>
+						<a href="https://acms-nvusd-ca.schoolloop.com/">ACMS Site</a>
+						<a href="https://www.nvusd.k12.ca.us/">NVUSD Site</a>
+						<a href="https://classroom.google.com/">Google Classroom</a>
+						<a href="gmail.com">Gmail</a>
+						<a href="Google.com">Google</a>
+					</div>
+				</div>
+
+
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+				<script>
+					function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+				</script>
     
   </div>
 		<p>
