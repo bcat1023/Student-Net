@@ -15,83 +15,7 @@
 			background-size: cover;
 		}
 
-		h1 {
-			font-family: 'Lato', sans-serif;
-		}
 
-		.overlay {
-			height: 0%;
-			width: 100%;
-			position: fixed;
-			z-index: 1;
-			top: 0;
-			left: 0;
-			background-color: rgb(0, 0, 0);
-			background-color: rgba(0, 0, 0, 0.9);
-			overflow-y: hidden;
-			transition: 0.5s;
-		}
-
-		.overlay-content {
-			position: relative;
-			top: 25%;
-			width: 100%;
-			text-align: center;
-			margin-top: 30px;
-		}
-
-		.overlay a {
-			padding: 8px;
-			text-decoration: none;
-			font-size: 36px;
-			color: #818181;
-			display: block;
-			transition: 0.3s;
-		}
-
-		.overlay a:hover,
-		.overlay a:focus {
-			color: #f1f1f1;
-		}
-
-		.overlay .closebtn {
-			position: absolute;
-			top: 20px;
-			right: 45px;
-			font-size: 60px;
-		}
-
-		@media screen and (max-height: 500px) {
-			.overlay {
-				overflow-y: auto;
-			}
-
-			.overlay a {
-				font-size: 20px
-			}
-
-			.overlay .closebtn {
-				font-size: 40px;
-				top: 35px;
-				right: 35px;
-			}
-		}
-
-		@media screen and (max-height: 450px) {
-			.overlay {
-				overflow-y: auto;
-			}
-
-			.overlay a {
-				font-size: 20px
-			}
-
-			.overlay .closebtn {
-				font-size: 40px;
-				top: 15px;
-				right: 35px;
-			}
-		}
 
 		body {
 			font-family: Arial, Helvetica, sans-serif;
@@ -132,37 +56,14 @@
 	<div class="navbar">
 
 		<a class="active" href="#">Home</a>
-		<div id="myNav" class="overlay">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<div class="overlay-content">
-				<a href="https://napavalleyusd.asp.aeries.net/Student/LoginParent.aspx">Aeries Student
-					Portal</a>
-				<a
-					href="https://clever.com/oauth/authorize?channel=clever&client_id=4c63c1cf623dce82caac&confirmed=true&redirect_uri=https%3A%2F%2Fclever.com%2Fin%2Fauth_callback&response_type=code&state=0cc5ce78f88c3e7f5cfddc378d396795672f6dabb8e7d789c1b06771a9ee9bd2&district_id=5ba2bcabf6cd4800018eb876">Clever</a>
-				<a href="https://acms-nvusd-ca.schoolloop.com/">ACMS Site</a>
-				<a href="https://www.nvusd.k12.ca.us/">NVUSD Site</a>
-				<a href="https://classroom.google.com/">Google Classroom</a>
-				<a href="gmail.com">Gmail</a>
-				<a href="Google.com">Google</a>
-			</div>
-		</div>
+    <a class="active" href="apps.html">Apps</a>
+	</div>
 
-
-		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-
-		<script>
-			function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-		</script>
 
 	</div>
 	<p>
-		<marquee behavior="scroll" direction="left">Welcome To The Student.Net Live Demo | Thanks For Useing The Unoffical
+		<marquee behavior="scroll" direction="left">Welcome To The Student.Net Live Demo | Thanks For Useing The
+			Unoffical
 			NVUSD Landing Page || NEWS: Social Distance Practices Still In Place | Family Are Oriantations Today |
 			Remote Learning Starts Aug 19 | Check Aeries For Your Offical Schedule :News || Have A Good Day </marquee>
 	</p>
@@ -182,31 +83,10 @@ function closeNav() {
 		</form>
 		<! google search ends>
 			<p> </p>
-			<div id="myNav" class="overlay">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-				<div class="overlay-content">
-					<a href="https://napavalleyusd.asp.aeries.net/Student/LoginParent.aspx">Aeries Student
-						Portal</a>
-					<a
-						href="https://clever.com/oauth/authorize?channel=clever&client_id=4c63c1cf623dce82caac&confirmed=true&redirect_uri=https%3A%2F%2Fclever.com%2Fin%2Fauth_callback&response_type=code&state=0cc5ce78f88c3e7f5cfddc378d396795672f6dabb8e7d789c1b06771a9ee9bd2&district_id=5ba2bcabf6cd4800018eb876">Clever</a>
-					<a href="https://acms-nvusd-ca.schoolloop.com/">ACMS Site</a>
-					<a href="https://www.nvusd.k12.ca.us/">NVUSD Site</a>
-					<a href="https://classroom.google.com/">Google Classroom</a>
-					<a href="gmail.com">Gmail</a>
-					<a href="Google.com">Google</a>
-				</div>
-			</div>
 
 
-			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
-			<script>
-				function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-			</script>
+
+
 </body>
